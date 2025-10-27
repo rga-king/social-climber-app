@@ -1,0 +1,2 @@
+export const INSTAGRAM_MAX_CHARACTERS = 2200;
+export const X_FREE_MAX_CHARACTERS = 280 ;
