@@ -7,3 +7,4 @@ export const FACEBOOK_POST_REEL_MAX_CHARACTERS = 5000 ;
 export const FACEBOOK_FIRST_COMMENTS_MAX_CHARACTERS = 5000 ;
 export const TIKTOK_BUSINESS_MAX_CHARACTERS = 2200 ;
 export const PINTEREST_BOARDS_MAX_CHARACTERS = 500 ;
+export const STATS_SOURCE_LINK = 'https://support.buffer.com/article/588-character-limits-for-each-social-network';
