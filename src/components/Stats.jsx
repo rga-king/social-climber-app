@@ -1,26 +1,28 @@
-import instagramIcon from '../assets/icons/instagram.svg';
-
-export default function Stats({ stats }) {
+export default function Stats({ stats, charCount }) {
   return (
     <section className='stats'>
       {stats.map((stat) => (
-        <Stat key={stat.label} label={stat.label} value={stat.value} />
+        <Stat
+          key={stat.id}
+          label={stat.postType}
+          value={stat.maxChars - charCount}
+          icon={stat.icon}
+          altTag={stat.socialMedia}
+        />
       ))}
     </section>
   );
 }
 
-function Stat({ label, value }) {
+function Stat({ label, value, icon, altTag }) {
   return (
     <section className='stat'>
-      <span
-        className={` stat__number ${value < 0 ? 'stat__number--limit' : ''}`}
-      >
+      <span className={` stat-number ${value < 0 ? 'stat-number-limit' : ''}`}>
         {value}
       </span>
       <div className='stat-info'>
-        <img src={instagramIcon} alt="info icon" title="Instagram" />
-        <h2 className='second-heading'>{label}</h2>
+        <img src={icon} alt={altTag} title={altTag} />
+        <h2 className='stat-post-type'>{label}</h2>
       </div>
     </section>
   );

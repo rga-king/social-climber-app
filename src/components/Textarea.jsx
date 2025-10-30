@@ -4,6 +4,8 @@ import Warning from './Warning.jsx';
 export default function Textarea({ text, setText }) {
   const [warning, setWarning] = useState('');
   const textareaRef = useRef(null);
+  const words = text.split(' ')[0] === '' ? 0 : text.split(' ').length;
+  const chars = text.length;
 
   const handleChange = (e) => {
     let newText = e.target.value;
@@ -29,8 +31,8 @@ export default function Textarea({ text, setText }) {
   return (
     <div className='textarea'>
       <section className='textStats'>
-        <p>Words: {text.split(' ')[0] === '' ? 0 : text.split(' ').length}</p>
-        <p>Characters: {text.length}</p>
+        <p>Words: {words}</p>
+        <p>Characters: {chars}</p>
       </section>
       <section className='textarea-input'>
         <textarea
