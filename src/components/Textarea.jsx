@@ -41,7 +41,7 @@ export default function Textarea({ text, setText }) {
           onChange={handleChange}
           onInput={handleInput}
           spellCheck='false'
-          placeholder='Enter your text'
+          placeholder='Start your post...'
         />
         {warning && <Warning warning={warning} />}
       </section>

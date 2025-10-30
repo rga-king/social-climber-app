@@ -43,7 +43,7 @@ export const socialMediaStats = [
   {
     id: 'xBasicPremium',
     socialMedia: 'X',
-    postType: 'basic/premium/premium +',
+    postType: 'basic/premium(+)',
     maxChars: X_BASIC_PREMIUM_MAX_CHARACTERS,
     icon: icons.x
   },
