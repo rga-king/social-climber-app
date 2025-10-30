@@ -1,12 +1,12 @@
 # 🌄 Social Climber
 
-**Social Climber** is a lightweight React app that helps users draft better social media posts by tracking word and character counts in real time.
+**Social Climber** is a lightweight React app that helps users draft social media posts by tracking word and character counts in real time.
 ---
 
 ## ✨ Features
 
 - ✏️ Real-time word and character counting  
-- 🧮 Analytics for multiple social media platforms (currently Instagram and X, more to follow...)  
+- 🧮 Analytics for multiple social media platforms
 - 🎯 Visual indicators when you approach platform limits
 - ⚠️ Warnings for danger spots (e.g. script tags)
 - ⚡ Built with [Vite](https://vitejs.dev/) for lightning-fast builds and hot reloading  
@@ -67,5 +67,6 @@ npm run lint
 ````
 
 ## 🪜 Next steps for Feature Development
-- Incorporate more social media platform options
+- Allow user to customise the stats they see using filter options
+- Allow users to add their own stat entry
 - Explore AI features e.g. suggestions for improving or generating posts
