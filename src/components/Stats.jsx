@@ -1,3 +1,5 @@
+import instagramIcon from '../assets/icons/instagram.svg';
+
 export default function Stats({ stats }) {
   return (
     <section className='stats'>
@@ -16,7 +18,10 @@ function Stat({ label, value }) {
       >
         {value}
       </span>
-      <h2 className='second-heading'>{label}</h2>
+      <div className='stat-info'>
+        <img src={instagramIcon} alt="info icon" title="Instagram" />
+        <h2 className='second-heading'>{label}</h2>
+      </div>
     </section>
   );
 }

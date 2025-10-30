@@ -1,10 +1,11 @@
 export default function Header() {
   return (
-    <header>
+    <header className='header'>
       <div className='bg' />
-      <h1 className='first-heading'>
-        WORD<span className='first-heading--thin'>ANALYTICS</span>
+      <h1>
+        SOCIAL<span className='heading-thin'>CLIMBER</span>
       </h1>
+      <h2>Make every character count</h2>
     </header>
   );
 }
